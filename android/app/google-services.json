@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "498095896866",
+    "project_id": "live-score-app-c82ae",
+    "storage_bucket": "live-score-app-c82ae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498095896866:android:f5548dfc95785429028d7b",
+        "android_client_info": {
+          "package_name": "com.example.live_score_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMGf8vHKx_E5FQpEHR1XJp46vTXJE44ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
