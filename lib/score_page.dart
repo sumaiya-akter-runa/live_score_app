@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import 'auth_service.dart';
+
 class ScorePage extends StatefulWidget {
   const ScorePage({super.key});
 
@@ -10,7 +12,7 @@ class ScorePage extends StatefulWidget {
 
 class _ScorePageState extends State<ScorePage> {
   final doc =
-  FirebaseFirestore.instance.collection('matches').doc('live_match');
+      FirebaseFirestore.instance.collection('matches').doc('live_match');
 
   // ekta key ba value change hole AnimatedSwitcher/TweenAnimationBuilder
   // notun animation trigger korbe - eta track korar jonno
@@ -109,6 +111,13 @@ class _ScorePageState extends State<ScorePage> {
         title: const Text('🏏 Live Score'),
         backgroundColor: Colors.deepOrange,
         elevation: 0,
+        actions: [
+          IconButton(
+            tooltip: 'Sign out',
+            icon: const Icon(Icons.logout),
+            onPressed: () => AuthService.instance.signOut(),
+          ),
+        ],
       ),
       body: Container(
         decoration: const BoxDecoration(
@@ -132,7 +141,8 @@ class _ScorePageState extends State<ScorePage> {
 
             if (data == null) {
               return const Center(
-                child: Text('Match data pawa jaini. "live_match" doc ta check koro.'),
+                child: Text(
+                    'Match data pawa jaini. "live_match" doc ta check koro.'),
               );
             }
 
@@ -196,9 +206,7 @@ class _ScorePageState extends State<ScorePage> {
                             fontWeight: FontWeight.bold,
                             color: wicketChanged
                                 ? Colors.red
-                                : (runsChanged
-                                ? Colors.green
-                                : Colors.black87),
+                                : (runsChanged ? Colors.green : Colors.black87),
                           ),
                           child: Text('$runs / $wickets'),
                         ),
