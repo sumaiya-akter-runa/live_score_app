@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "498095896866",
+    "project_id": "live-score-app-c82ae",
+    "storage_bucket": "live-score-app-c82ae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498095896866:android:f5548dfc95785429028d7b",
+        "android_client_info": {
+          "package_name": "com.example.live_score_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498095896866-599s7p1mfdvcff8lfi30h5s3jkb181fa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.live_score_app",
+            "certificate_hash": "04d6a782efce5f13f9f6774b217578527ef9a2b2"
+          }
+        },
+        {
+          "client_id": "498095896866-gh3ogfmule8gqo24h0j4eidindr1jr7h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMGf8vHKx_E5FQpEHR1XJp46vTXJE44ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498095896866-gh3ogfmule8gqo24h0j4eidindr1jr7h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "498095896866-dfqufn3kisbig22kpuqs2s9uotmv79jv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.liveScoreApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
